@@ -1,0 +1,20 @@
+// A program that will generate the multiplication table (up to x10) of a number
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int variable1, variable2;
+
+    cout << "Enter a number: ";
+    cin >> variable1;
+    cout << "Multiplication Table of: " << endl;
+
+    for (variable2 = 1; variable2 <= 10; ++variable2)
+	{
+        cout << "\n" << variable1 << " * " << variable2 << " = " << variable1 * variable2 << endl;
+    }
+    
+    return 0;
+}
