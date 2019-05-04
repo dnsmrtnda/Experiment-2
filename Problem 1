@@ -1,0 +1,47 @@
+// A program that tells that an Internet service provider has 3 different subscription packages for its customers
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int chosenpackage, additionalhours, price;
+    
+    
+    cout << " Welcome to Persona Internet Service!" << endl;
+    
+    cout << "Choose Among the Available Packages Below" << endl;
+    
+    cout << " Package A: For P995/mo,it provides 10 hrs of internet access.Additional hours costs P20/hr." << endl;
+    cout << " Package B: For P1495/mo,it provides 20 hrs of internet access.Additional hours costs P10/hr." << endl;
+    cout << " Package C: For P1995/mo,it provides unlimited internet access." << endl;
+    
+    
+    cout << "Avail a Package: " << endl;
+    cout << " 1 for Package A, 2 for Package B, 3 for Package C";
+    cin  >>  chosenpackage;
+    
+    cout << "Used Additional Hours " << endl;
+    cin >> additionalhours;
+    
+    if (chosenpackage==1)
+    {
+        price = 995 ;
+        cout << "Subscription Bill : " << price + (additionalhours - 10) * 20<< endl;
+    }
+    else if (chosenpackage==2)
+    {
+        price = 1495;
+        cout << "Subscription Bill : " << price + (additionalhours - 20) * 10 << endl;
+    }
+    
+    else if (chosenpackage==3)
+    {
+        price = 1995;
+        cout << "Subscription Bill : " << price << endl;
+    }
+    
+    
+    return 0;
+}
+
