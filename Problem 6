@@ -1,0 +1,40 @@
+// A program that will output the NEXT 20 Fibonacci numbers (after 0 and 1) in one line.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x, varC, fibonaccinum, varA, varB;
+    
+    varA = 0;
+    varB = 1;
+    
+    cout << "Enter 22 to output the next 20 Fibonacci numbers after 0 and 1: " << endl;
+    cin >> fibonaccinum;
+    
+    cout << "Fibonacci numbers: " << endl;
+    
+    for (x = 0 ; x < fibonaccinum ; x++)
+    {
+        
+        if (x<=1)
+            
+        {
+            varC = x;
+        }
+        
+        else
+        {
+            varC = varA + varB;
+            varA = varB;
+            varB= varC;
+        }
+        
+        cout << varC << " ";
+    }
+    
+    
+    return 0;
+    
+}
