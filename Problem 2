@@ -1,0 +1,34 @@
+// A program that computes a customer’s water bill.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	double waterdemandcharge, latepaymentcharge, water, unpaidbalance, consumptionofwater, costofwater;
+	
+	waterdemandcharge = 35;
+	latepaymentcharge = 20;
+	
+	cout << "Enter used gallons of water: " << endl; 
+	cin >> water;
+	
+	cout << "Unpaid Balance: " << endl; 
+	cin >> unpaidbalance;
+	
+	if (unpaidbalance > 0)
+	{
+		consumptionofwater = water * 1.10;
+		costofwater = waterdemandcharge + consumptionofwater + unpaidbalance + latepaymentcharge;
+		cout << "Total Water Bill: " << costofwater << " Pesos" << endl;
+	}
+	
+	else 
+	{
+		consumptionofwater = water * 1.10;
+		costofwater = waterdemandcharge + consumptionofwater;
+		cout << "Total Water Bill : " << costofwater << " Pesos" << endl;
+	}
+  
+return 0;
+}
