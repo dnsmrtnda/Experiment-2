@@ -1,0 +1,18 @@
+// A program that counts numbers, separated by commas, up to 10. When it reaches 10, it will count by 2s until it reaches 30.
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+
+	int numcount;
+	cout << "Counting...\n";
+	for (numcount=1; numcount<=10; numcount++)
+	cout << counter << ", " ;
+	
+	for (numcount=12; numcount<=30; numcount+=2)
+	cout << numcount << ", " ;
+
+	return 0;
+}
